@@ -2,6 +2,8 @@ import { useState } from "react";
 function App() {
   const [breakLength, setBreakLength] = useState(5);
   const [sessionLength, setSessionLength] = useState(25);
+  const [timerLabel, setTimerLabel] = useState("Session");
+  const [timeLeft, setTimeLeft] = useState(sessionLength);
   return (
     <div className="app">
       <h1>25 + 5 Clock App</h1>
@@ -22,7 +24,10 @@ function App() {
             <button id='session-decrement' onClick={() => setSessionLength(prev => prev - 1)}>&#8595;</button>
           </div>
         </div>
-
+      </div>
+      <div className="timer">
+        <p id="timer-label">{timerLabel}</p>
+        <p id='time-left'>{timeLeft}</p>
       </div>
     </div>
   )

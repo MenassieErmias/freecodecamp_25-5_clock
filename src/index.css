@@ -24,6 +24,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    text-shadow: 0 0 4px black;
 }
 
 .inputContainer {
@@ -49,4 +51,22 @@ body {
     padding: 0.25rem;
 }
 
-.inputControl p {}
+.timer {
+    border: 5px rgba(0, 33, 41, 0.9) solid;
+    width: 400px;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 20%;
+}
+
+#timer-label {
+    font-size: 1.5rem;
+
+}
+
+#time-left {
+    font-size: 3rem;
+    margin-top: 1rem;
+
+}
